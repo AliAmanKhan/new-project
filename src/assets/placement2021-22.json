@@ -1,0 +1,154 @@
+[
+    {
+      "name": "Saurabh Singh",
+      "branch":"Information Technology",
+      "company": "Secure Learning Pvt. Ltd."
+    },
+    {
+        "name": "Vaibhav Chaudhary",
+        "branch":"Computer Science & Enginnering",
+        "company": "Secure Learning Pvt. Ltd."
+      },
+      {
+        "name": "Muskan Dasani",
+        "branch":"Computer Science & Enginnering",
+        "company": "Secure Learning Pvt. Ltd."
+      },
+      {
+        "name": "Afsha Ansari",
+        "branch":"Computer Science & Enginnering",
+        "company": "Secure Learning Pvt. Ltd."
+      },
+      {
+        "name": "Yash Sharma",
+        "branch":"Computer Science & Enginnering",
+        "company": "Aloha Technologies Pvt. Ltd."
+      },
+      {
+        "name": "Praveen Kumar",
+        "branch":"Computer Science & Enginnering",
+        "company": "Erricson Pvt. Ltd."
+      },
+      {
+        "name": "Saloni Mittal",
+        "branch":"Computer Science & Enginnering",
+        "company": "Erricson Pvt. Ltd."
+      },
+      {
+        "name": "Jyoti Verma",
+        "branch":"Computer Science & Enginnering",
+        "company": "Erricson Pvt. Ltd."
+      },
+      {
+        "name": "Mohammad Rizwan",
+        "branch":"Computer Science & Enginnering",
+        "company": "Aklen IT Solutions Pvt. Ltd."
+      },
+      {
+        "name": "Laxita Acharya",
+        "branch":"Computer Science & Enginnering",
+        "company": "Aklen IT Solutions Pvt. Ltd."
+      },
+      {
+        "name": "Amit Yadav",
+        "branch":"Computer Science & Enginnering",
+        "company": "Aklen IT Solutions Pvt. Ltd."
+      },
+      {
+        "name": "Rajendra Meena",
+        "branch":"Computer Science & Enginnering",
+        "company": "Aklen IT Solutions Pvt. Ltd."
+      },
+      {
+        "name": "Komal Randhava",
+        "branch":"Mechanical Engineering",
+        "company": "A-1 Fench Product Company Pvt. Ltd."
+      },
+      {
+        "name": "Shubham Gochar",
+        "branch":"Mechanical Engineering",
+        "company": "Byju"
+      },
+      {
+        "name": "Pranjal Mittal",
+        "branch":"Mechanical Engineering",
+        "company": "Vishal Bearing Ltd."
+      },
+      {
+        "name": "Ashish Mahlonia",
+        "branch":"Mechanical Engineering",
+        "company": "Apollo Tyres"
+      },
+      {
+        "name": "Vishal Pankaj",
+        "branch":"Mechanical Engineering",
+        "company": "Himile Molds India Pvt. Ltd."
+      },
+      {
+        "name": "Yogendra Sharma",
+        "branch":"Mechanical Engineering",
+        "company": "Saint Goben India"
+      },
+      {
+        "name": "Sanoj Kumar",
+        "branch":"AKA Logistics Pvt. Ltd.",
+        "company": "Secure Learning Pvt. Ltd."
+      },
+      {
+        "name": "Narendra Kumar Meena",
+        "branch":"AKA Logistics Pvt. Ltd.",
+        "company": "Secure Learning Pvt. Ltd."
+      },
+      {
+        "name": "Aakash Ahmad Khan",
+        "branch":"AKA Logistics Pvt. Ltd.",
+        "company": "Secure Learning Pvt. Ltd."
+      },
+      {
+        "name": "Manish Chaudhary",
+        "branch":"AKA Logistics Pvt. Ltd.",
+        "company": "Secure Learning Pvt. Ltd."
+      },
+      {
+        "name": "Tokir Khan",
+        "branch":"Mechanical Engineering",
+        "company": "PinClick"
+      },
+      {
+        "name": "Darpan Jaiswal",
+        "branch":"Mechanical Engineering",
+        "company": "PinClick"
+      },
+      {
+        "name": "Mohammad Shadab Rizwan",
+        "branch":"Civil Engineering",
+        "company": "PinClick"
+      },
+      {
+        "name": "Ashish Gupta",
+        "branch":"Civil Engineering",
+        "company": "PinClick"
+      },
+      {
+        "name": "Tanmay Kulshreshtha",
+        "branch":"Civil Engineering",
+        "company": "PinClick"
+      },
+      {
+        "name": "Ashutosh Kumar Tiwari",
+        "branch":"Civil Engineering",
+        "company": "PinClick"
+      },
+      {
+        "name": "Bajrang Lal Goswami",
+        "branch":"Computer Science & Enginnerin",
+        "company": "PinClick"
+      },
+      {
+        "name": "Abhishek Kumar Kushwah",
+        "branch":"Electronics & Communication Engineering",
+        "company": "PinClick"
+      }
+  
+  ]
+  

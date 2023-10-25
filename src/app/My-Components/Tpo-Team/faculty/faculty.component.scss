@@ -1,0 +1,30 @@
+.parent{
+    display: flex;
+    flex-direction: row;
+
+    .fixed-left {
+        width: 100px;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        // border-top: 2px solid black;
+        border-right: 2px solid black;
+
+        .rotate {
+            position: fixed;
+            left: -170px;
+            top: 60vh;
+            font-size: 4rem;
+            transform: rotate(-90deg);
+        }
+    }
+
+    .right{
+        width: calc(100% - 100px);
+        height: calc(100vh - 80px - 7rem);
+    }
+}

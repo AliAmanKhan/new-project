@@ -1,0 +1,51 @@
+.parent {
+
+    .fixed-left {
+        width: 100px;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        border-right: 2px solid black;
+
+        .rotate {
+            position: fixed;
+            left: -200px;
+            top: 50vh;
+            font-size: 3.6rem;
+            transform: rotate(-90deg);
+        }
+    }
+
+    .right {
+        backdrop-filter: blur(4px);
+        width: calc(100% - 102px);
+        margin-left: 102px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(157, 255, 0, 0.497);
+
+        h1 {
+            margin: 1rem;
+            text-decoration: underline;
+            text-decoration-color: orangered;
+        }
+
+        .table {
+            width: 60vw;
+            margin-bottom: 1rem;
+        }
+
+        .head {
+            background-color: yellow;
+        }
+    }
+}
+.row-alternate {
+    background-color: rgba(255, 68, 0, 0.496);
+  }

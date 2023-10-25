@@ -1,0 +1,128 @@
+.parent{
+    display: flex;
+    flex-direction: row;
+
+    .fixed-left{
+        width: 100px;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        // border-top: 2px solid black;
+        border-right: 2px solid black;
+
+        .rotate{
+            position: fixed;
+            left: -180px;
+            top: 60vh;
+            font-size: 3rem;
+            transform: rotate(-90deg);
+        }
+    }
+    .right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 102px;
+        width: calc( 100% - 102px );
+        background-color: rgba(157, 255, 0, 0.497);
+
+        h1{
+            text-decoration: underline;
+            text-decoration-color: orangered;
+            margin: 1rem;
+        }
+        .imagesContent{
+            width: 80rem;
+            height: auto;
+            margin: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .row{
+                height: 23rem;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+
+                .img{
+                    border: 1px solid black;
+                    margin-left: 1rem;
+                    margin-right: 1rem;
+                    height: 20rem;
+                    width: 35rem;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-origin: center;
+                }
+                .img1{ background-image: url(../../../../assets/tpoGallery/all.jpg); }
+                .img2{ background-image: url(../../../../assets/tpoGallery/parentsMeet.jpg); }
+                .img3{ background-image: url(../../../../assets/tpoGallery/test.jpg); }
+                .img4{ background-image: url(../../../../assets/tpoGallery/webInauguration.jpg); }
+                .img5{ background-image: url(../../../../assets/tpoGallery/adminGECJ.jpg); }
+                .img6{ background-image: url(../../../../assets/tpoGallery/college.jpg); }
+
+                .content{
+                    font-size: 1.5rem;
+                    word-wrap: break-word;
+                    line-height: 1.7rem;
+                    width: 20rem;
+                    height: auto;
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    .hr1{
+                        width: 10rem;
+                        height: 2px;
+                        background-color: goldenrod;
+                    }
+                    .hr2{
+                        width: 7rem;
+                        height: 2px;
+                        background-color: goldenrod;
+                    }
+                }
+            }
+        }
+
+        ul{
+            li{
+                width: 60rem;
+                margin: 0.5rem;
+                line-height: 1.5rem;
+                font-size: 1.2rem;
+            }
+        }
+
+        .note{
+            height: 7rem;
+            width: 70rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            font-weight: 400;
+            font-size: 1rem;
+
+            .quote{
+                // height: 1rem;
+                // width: 1rem;
+                padding: 0.5rem;
+                border: 1px solid black;
+                border-radius: 5px;
+                margin: 1rem;
+            }
+        }
+    }
+}

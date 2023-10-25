@@ -1,0 +1,169 @@
+// Header CSS Starts
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: "segoe ui";
+}
+
+.nav {
+    height: 80px;
+    width: 100%;
+    background-color: orangered;
+    position: relative;
+}
+
+.nav>.nav-header {
+    display: inline;
+}
+
+.nav>.nav-header>.nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    padding: 0px 10px 10px 10px;
+
+    .nav-sub-title {
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            height: 70px;
+            border: none;
+            border-radius: 50%;
+        }
+
+        .clgName {
+            display: flex;
+            flex-direction: column;
+            margin-left: 5px;
+        }
+
+        .clgName>span {
+            font-size: small;
+            font-family: 'poppins';
+            font-weight: 600;
+        }
+    }
+}
+
+.nav>.nav-btn {
+    display: none;
+}
+
+.nav>.nav-links {
+    display: flex;
+    flex-direction: row;
+    float: right;
+    font-size: 18px;
+    // margin-top: 15px;
+    margin-right: 4px;
+}
+
+.nav>.nav-links>li{
+    list-style: none;
+}
+
+.nav>.nav-links>li>a {
+    display: inline-block;
+    padding: 30px 10px 13px 10px;
+    text-decoration: none;
+    color: #efefef;
+    cursor: pointer;
+}
+
+// .nav>.nav-links>li>a:hover {
+//     background-color: rgba(0, 0, 0, 0.3);
+// }
+
+.nav>#nav-check {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    .nav>.nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 15px;
+    }
+
+    .nav>.nav-btn>label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+    }
+
+    .nav>.nav-btn>label:hover,
+    .nav #nav-check:checked~.nav-btn>label {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .nav>.nav-btn>label>span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+    }
+
+    .nav>.nav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: orangered;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 80px;
+        left: 0px;
+    }
+
+    .nav>.nav-links>a {
+        display: block;
+        width: 100%;
+        color: white;
+    }
+
+    .nav>#nav-check:not(:checked)~.nav-links {
+        height: 0px;
+    }
+
+    .nav>#nav-check:checked~.nav-links {
+        height: calc(100vh - 80px);
+        overflow-y: auto;
+        z-index: 10;
+    }
+}
+
+
+// Header CSS Ends
+
+// Footer CSS 
+footer{
+    width: calc( 100% - 100px );
+    float: right;
+    height: 7rem;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer>h5,footer>h4{
+    font-weight: 600;
+    color: white;
+    font-family: 'poppins';
+    margin: 0;
+
+    span>a{
+        text-decoration: underline;
+        text-decoration-color: orangered;
+        color: white;
+    }
+}

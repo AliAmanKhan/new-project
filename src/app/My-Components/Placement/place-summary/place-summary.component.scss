@@ -1,0 +1,51 @@
+.parent{
+
+    .fixed-left {
+        width: 100px;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        border-right: 2px solid black;
+
+        .rotate {
+            position: fixed;
+            left: -220px;
+            top: 55vh;
+            font-size: 3rem;
+            transform: rotate(-90deg);
+        }
+    }
+
+    .right {
+        backdrop-filter: blur(4px);
+        height: calc( 100vh - 80px - 7rem );
+        width: calc(100% - 102px);
+        margin-left: 102px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(157, 255, 0, 0.497);
+
+        h1{
+            font-weight: 900;
+            text-decoration: underline;
+            text-decoration-color: orangered;
+            margin: 1rem;
+        }
+        ul{
+            width: 80vw;
+
+            li{
+                font-size: 1.2rem;
+                line-height: 1.5rem;
+                margin: 0.5rem;
+            }
+
+        }
+    }
+}

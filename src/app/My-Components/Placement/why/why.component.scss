@@ -1,0 +1,165 @@
+.parent{
+    display: flex;
+    flex-direction: row;
+
+    .fixed-left{
+        width: 100px;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        // border-top: 2px solid black;
+        border-right: 2px solid black;
+
+        .rotate{
+            position: fixed;
+            left: -170px;
+            top: 60vh;
+            font-size: 5rem;
+            transform: rotate(-90deg);
+        }
+    }
+    .right-back{
+        position: absolute;
+        top: 100px;
+        right: 0;
+        height: 100vh;
+        width: calc(100% - 102px);
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.504), rgba(0, 0, 0, 0.504)), url(../../../../assets/tpoGallery/all.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-attachment: fixed;
+        z-index: 0;
+        animation: slideWithLinearGradient linear infinite 15s;
+    }
+    .right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        backdrop-filter: blur(5px);
+        margin-left: 102px;
+        width: calc( 100% - 102px );
+
+        h1{
+            color: white;
+            margin: 1rem;
+            text-decoration: underline;
+            text-decoration-color: orangered;
+        }
+
+        .paragraphImg{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: x-large;
+            color: white;
+            line-height: 1.5rem;
+            width: 60rem;
+            margin-bottom: 1rem;
+
+            .firstPara{
+                height: 30rem;
+                width: 80rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                color: white;
+
+                .img{
+                    border: 1px solid black;
+                    margin: 1rem;
+                    background-image: url(../../../../assets/tpoGallery/all.jpg);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-origin: center;
+                    width: 50rem;
+                    height: 30rem;
+                    animation: slide linear infinite 15s;
+                }
+            }
+        }
+
+        .images{
+            width: calc( 100% - 100px );
+            height: 15rem;
+            display: flex;
+            flex-direction: row;
+            border: 2px solid black;
+            padding: 2px;
+            margin-bottom: 1rem;
+            justify-content: center;
+            align-items: center;
+
+            .image{
+                height: 15rem;
+                width: calc((( 100% - 100px ) / 4) + 2rem);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-origin: content-box;
+                border: 1px solid black;
+                margin-left: 0.1rem;
+                margin-right: 0.1rem;
+                transition: all ease-out 0.5s;
+            }
+            .image:hover{
+                scale: 1.05;
+                cursor: url(../../../../assets/icons/iconmonstr-plus-circle-lined-32.png), auto;
+            }
+            .image1{
+                background-image: url(../../../../assets/tpoGallery/all.jpg);
+            }
+            .image2{
+                background-image: url(../../../../assets/tpoGallery/webInauguration.jpg);
+            }
+            .image3{
+                background-image: url(../../../../assets/tpoGallery/parentsMeet.jpg);
+            }
+            .image4{
+                background-image: url(../../../../assets/tpoGallery/test.jpg);
+            }
+        }
+        h2{
+            text-decoration: underline;
+            text-decoration-color: orangered;
+            margin-bottom: 0;
+        }
+        .culturals{
+            width: 80vw;
+            text-align: center;
+            margin: 1rem;
+            font-size: larger;
+            line-height: 1.5rem;
+        }
+    }
+}
+
+@keyframes slide {
+    0%{ background-image: url(../../../../assets/tpoGallery/all.jpg); }
+    20%{ background-image: url(../../../../assets/tpoGallery/all.jpg); }
+    25%{ background-image: url(../../../../assets/tpoGallery/webInauguration.jpg); }
+    45%{ background-image: url(../../../../assets/tpoGallery/webInauguration.jpg); }
+    50%{ background-image: url(../../../../assets/tpoGallery/parentsMeet.jpg); }
+    70%{ background-image: url(../../../../assets/tpoGallery/parentsMeet.jpg); }
+    75%{ background-image: url(../../../../assets/tpoGallery/test.jpg); }
+    95%{ background-image: url(../../../../assets/tpoGallery/test.jpg); }
+    100%{ background-image: url(../../../../assets/tpoGallery/all.jpg); }
+}
+
+@keyframes slideWithLinearGradient {
+    0%{ background: linear-gradient(to right, rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)), url(../../../../assets/tpoGallery/all.jpg); }
+    20%{ background: linear-gradient(to right, rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)), url(../../../../assets/tpoGallery/all.jpg); }
+    25%{ background: linear-gradient(to right, rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)), url(../../../../assets/tpoGallery/webInauguration.jpg); }
+    45%{ background: linear-gradient(to right, rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)), url(../../../../assets/tpoGallery/webInauguration.jpg); }
+    50%{ background: linear-gradient(to right, rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)), url(../../../../assets/tpoGallery/parentsMeet.jpg); }
+    70%{ background: linear-gradient(to right, rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)), url(../../../../assets/tpoGallery/parentsMeet.jpg); }
+    75%{ background: linear-gradient(to right, rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)), url(../../../../assets/tpoGallery/test.jpg); }
+    95%{ background: linear-gradient(to right, rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)), url(../../../../assets/tpoGallery/test.jpg); }
+    100%{ background: linear-gradient(to right, rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)), url(../../../../assets/tpoGallery/all.jpg); }   
+}

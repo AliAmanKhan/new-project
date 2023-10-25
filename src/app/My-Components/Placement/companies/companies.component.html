@@ -1,0 +1,54 @@
+<div class="parent">
+    <div class="fixed-left">
+        <span class="rotate">#COMPANIES_VISIT</span>
+    </div>
+    <div class="right-back"></div>
+    <div class="right">
+        <h1 class="h1">Companies Conducted Placement Drive During Session 2021-22</h1>
+        <div class="table">
+            <table mat-table [dataSource]="companies" class="mat-elevation-z8">
+
+                <!--- Note that these columns can be defined in any order.
+                  The actual rendered columns are set as a property on the row definition" -->
+    
+                <!-- Position Column -->
+                <ng-container matColumnDef="serial">
+                    <th class="head" mat-header-cell *matHeaderCellDef> No. </th>
+                    <td mat-cell [ngClass]="index % 2 == 0 ? 'row-alternate' : ''" *matCellDef="let index = index"> {{index + 1}} </td>
+                </ng-container>
+    
+                <!-- Name Column -->
+                <ng-container matColumnDef="name">
+                    <th class="head" mat-header-cell *matHeaderCellDef> Name </th>
+                    <td mat-cell [ngClass]="index % 2 == 0 ? 'row-alternate' : ''" *matCellDef="let element; index as index"> {{element}} </td>
+                </ng-container>
+    
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+            </table>
+        </div>
+        <h1>Companies Conducted Placement Drive During Session 2022-23</h1>
+        <div class="table">
+            <table mat-table [dataSource]="companies" class="mat-elevation-z8">
+
+                <!--- Note that these columns can be defined in any order.
+                  The actual rendered columns are set as a property on the row definition" -->
+    
+                <!-- Position Column -->
+                <ng-container matColumnDef="serial">
+                    <th class="head" mat-header-cell *matHeaderCellDef> No. </th>
+                    <td mat-cell [ngClass]="index % 2 == 0 ? 'row-alternate' : ''" *matCellDef="let index = index"> {{index + 1}} </td>
+                </ng-container>
+    
+                <!-- Name Column -->
+                <ng-container matColumnDef="name">
+                    <th class="head" mat-header-cell *matHeaderCellDef> Name </th>
+                    <td mat-cell [ngClass]="index % 2 == 0 ? 'row-alternate' : ''" *matCellDef="let element; index as index"> {{element}} </td>
+                </ng-container>
+    
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+            </table>
+        </div>
+    </div>
+</div>

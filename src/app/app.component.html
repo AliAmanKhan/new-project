@@ -1,0 +1,61 @@
+<div class="nav">
+  <input type="checkbox" id="nav-check">
+  <div class="nav-header">
+    <div class="nav-title">
+      <div class="nav-sub-title">
+        <img src="../assets/images/logo.jpg" alt="">
+        <span class="clgName">
+          <span>Engineering</span>
+          <span>College</span>
+          <span>Jhalawar</span>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="nav-btn">
+    <label for="nav-check">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+
+  <div class="nav-links">
+    <li><a (click)="closeMobileMenu()" routerLink="/">Home</a></li>
+    <li><a (click)="closeMobileMenu()" routerLink="/about">About US</a></li>
+    <li><a [matMenuTriggerFor]="tpo">Tpo Team</a></li>
+    <mat-menu #tpo="matMenu">
+      <button (click)="closeMobileMenu()" mat-menu-item routerLink="/faculty">Faculty</button>
+      <button (click)="closeMobileMenu()" mat-menu-item routerLink="/student">Student Cell</button>
+    </mat-menu>
+    <li><a [matMenuTriggerFor]="placement">Placement</a></li>
+    <mat-menu #placement="matMenu">
+      <button (click)="closeMobileMenu()" mat-menu-item routerLink="/placements">Placements</button>
+      <button (click)="closeMobileMenu()" mat-menu-item routerLink="/place-summary">Placement Summary</button>
+      <button (click)="closeMobileMenu()" mat-menu-item routerLink="/place-policy">Placement Policy</button>
+      <button (click)="closeMobileMenu()" mat-menu-item routerLink="/companies">Companies Visit</button>
+      <!-- <button mat-menu-item routerLink="">Facilities</button> -->
+      <button (click)="closeMobileMenu()" mat-menu-item routerLink="/why">Why GECJ?</button>
+    </mat-menu>
+    <li><a (click)="closeMobileMenu()" routerLink="/gallery">Gallery</a></li>
+    <li><a [matMenuTriggerFor]="brochure">Brochure</a></li>
+    <mat-menu #brochure="matMenu">
+      <button mat-menu-item (click)="openBrochure()">College Brochure</button>
+      <button mat-menu-item (click)="openPlacementBrochure()">Placement Brochure</button>
+    </mat-menu>
+    <li><a (click)="closeMobileMenu()" routerLink="/faq">FAQs?</a></li>
+    <li><a (click)="closeMobileMenu()" routerLink="/contact">Contact Us</a></li>
+  </div>
+</div>
+
+<!-- Navbar ends here  -->
+
+<router-outlet></router-outlet>
+<!-- Routed components go here -->
+
+<footer>
+  <h5>All Rights Reserved | &copy; Engineering College Jhalawar</h5>
+  <h4>Developed By:- <span><a href="">Ali Aman Khan</a></span> & <span><a href="">Abhishek Kumar</a></span></h4>
+  <h4>(Students of Computer Science Branch)</h4>
+  <h4>(Department of Computer Science, Engineering College Jhalawar)</h4>
+</footer>

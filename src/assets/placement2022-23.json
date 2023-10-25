@@ -1,0 +1,73 @@
+[
+    {
+      "name": "Abhishek Mehta",
+      "branch":"Informtion Technology",
+      "company": "Mediacity Corporation, Bhilwara"
+    },
+    {
+        "name": "Anshul Upadhyay",
+        "branch":"Computer Science & Enginnering",
+        "company": "Sigma Info Solutions, Jodhpur"
+      },
+      {
+        "name": "Aryan Raj",
+        "branch":"Computer Science & Enginnering",
+        "company": "MailMoDo, Bangalore"
+      },
+      {
+        "name": "Ishan Dixit",
+        "branch":"Computer Science & Enginnering",
+        "company": "Rinex Technology, Bangalore"
+      },
+      {
+        "name": "Jag Mohan Kumar",
+        "branch":"Computer Science & Enginnering",
+        "company": "Entity Digital Sports Pvt. Ltd., Jaipur"
+      },
+      {
+        "name": "Joel Shaji",
+        "branch":"Computer Science & Enginnering",
+        "company": "Intellipaat, Bangalore"
+      },
+      {
+        "name": "Manav Pareek",
+        "branch":"Computer Science & Enginnering",
+        "company": "Appcino A. Xebia, Jaipur"
+      },
+      {
+        "name": "Mukesh Singh",
+        "branch":"Computer Science & Enginnering",
+        "company": "Entity Digital Sports Pvt. Ltd., Jaipur"
+      },
+      {
+        "name": "Rajesh",
+        "branch":"Computer Science & Enginnering",
+        "company": "Streebo, Ahemedabad"
+      },
+      {
+        "name": "Sidhharth Malav",
+        "branch":"Computer Science & Enginnering",
+        "company": "TechOn Dators, Udaipur"
+      },
+      {
+        "name": "Utsav Pareek",
+        "branch":"Computer Science & Enginnering",
+        "company": "TechOn Dators, Udaipur"
+      },
+      {
+        "name": "Divyansh Chourasiya",
+        "branch":"Information Technology",
+        "company": "Lexus Technology"
+      },
+      {
+        "name": "Chirag Singh Sisodiya",
+        "branch":"Information Technology",
+        "company": "Rinex Technology, Bangalore"
+      },
+      {
+        "name": "Devesh Sharma",
+        "branch":"Information Technology",
+        "company": "Intellipaat, Bangalore"
+      }
+  ]
+  

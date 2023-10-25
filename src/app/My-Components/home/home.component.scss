@@ -1,0 +1,227 @@
+.parent{
+    display: flex;
+    flex-direction: row;
+
+    .fixed-left{
+        width: 100px;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        // border-top: 2px solid black;
+        border-right: 2px solid black;
+
+        .rotate{
+            position: fixed;
+            left: -170px;
+            top: 60vh;
+            font-size: 5rem;
+            transform: rotate(-90deg);
+        }
+    }
+
+    .right{
+        margin-left: 100px;
+        width: calc( 100% - 100px );
+        display: flex;
+        flex-direction: column;
+
+        .principalDesk{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .img-principal{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+                height: 18rem;
+                width: 15rem;
+
+                img{
+                    border: 1px solid black;
+                    height:18rem;
+                    transition: all ease-in-out 0.5s;
+                }
+
+                img:hover{
+                    height: 20rem;
+                }
+            }
+        }
+        
+        .tpoDesk, .principalDesk{
+            width: calc(100% - 100px);
+            height: 20rem;
+            display: flex;
+            flex-direction: row;
+        }
+        .principal-content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: left;
+            width: 50vw;
+        }
+        .principal-content>div{
+            text-align: left;
+            margin: 0.5rem;
+            font-size: 1rem;
+        }
+        
+        .rightTagLine{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            height: 12rem;
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+            background-image: linear-gradient(to right, orangered, transparent);
+
+            .tagLine{
+                margin-left: 1.5rem;
+                width: 4rem;
+                color: white;
+            }
+
+            .text-anim{
+                display: flex;
+                flex-direction: column;
+
+                span{
+                    margin: 8px 0 8px 15px;
+                    font-size: x-large;
+                }
+            }
+        }
+
+        .tpoDesk{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .img-tpo{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+                height: 18rem;
+                width: 25rem;
+
+                img{
+                    border: 1px solid black;
+                    height:18rem;
+                    transition: all ease-in-out 0.5s;
+                }
+
+                img:hover{
+                    height: 20rem;
+                }
+            }
+        }
+        .tpo-content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: right;
+            
+            width: 50vw;
+        }
+        .tpo-content>div{
+            text-align: right;
+            margin: 0.5rem;
+            font-size: 1rem;
+        }
+
+        .colAffiliation{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            border-color: black transparent black transparent;
+            border: 2px solid;
+            height: 25rem;
+            // width: calc(100% - 100px);
+            background: linear-gradient(to right, orangered, transparent), url(../../../assets/images/collegeAcademic.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-origin: center;
+
+            .colAffImg{
+                height: 23rem;
+                width: 50vw;
+                display: flex;
+                flex-direction: column;
+                // overflow: hidden;
+
+                img{
+                    height: 17rem;
+                    cursor: url(../../../assets/icons/iconmonstr-share-11-24.png), auto;
+                    transition: all ease-out 0.5s;
+                }
+                img:hover{
+                    scale: 1.04;
+                }
+                div{
+                    // padding-top: 2.5rem;
+                    // padding: 2.5rem 1rem 0 1rem;
+                    height: 6rem;
+                    width: 50vw;
+                    background-color: black;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    span>a{
+                        color: white;
+                        text-decoration-color: orangered;
+                    }
+                }
+                div>span{
+                    width: 40vw;
+                    text-align: center;
+                    color: white;
+                }
+            }
+            .colContent{
+                height: 24rem;
+                width: 40vw;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                span{
+                    padding: 0.5rem;
+                    text-align: left;
+                    line-height: 1.5rem;
+                    letter-spacing: 3px;
+                    backdrop-filter: blur(5px);
+                    word-wrap: break-word;
+                    width: 30vw;
+                    color: white;
+                    font-size: x-large;
+
+                }
+            }
+        }
+
+        .note{
+            height: 7rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+
+            span{
+                border: 1px solid black;
+                padding: 0.5rem;
+                margin: 1rem;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+
