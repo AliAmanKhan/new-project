@@ -40,6 +40,7 @@
                 overflow: hidden;
                 height: 18rem;
                 width: 15rem;
+                cursor: url(../../../assets/icons/iconmonstr-plus-circle-lined-32.png), auto;
 
                 img{
                     border: 1px solid black;
@@ -110,6 +111,7 @@
                 overflow: hidden;
                 height: 18rem;
                 width: 25rem;
+                cursor: url(../../../assets/icons/iconmonstr-plus-circle-lined-32.png), auto;
 
                 img{
                     border: 1px solid black;
@@ -157,14 +159,19 @@
                 flex-direction: column;
                 // overflow: hidden;
 
-                img{
-                    height: 17rem;
-                    cursor: url(../../../assets/icons/iconmonstr-share-11-24.png), auto;
-                    transition: all ease-out 0.5s;
+                a{
+
+                    img{
+                        width: 50vw;
+                        cursor: url(../../../assets/icons/iconmonstr-share-11-24.png), auto;
+                        transition: all ease-out 0.5s;
+                    }
+
+                    img:hover{
+                        scale: 1.04;
+                    }
                 }
-                img:hover{
-                    scale: 1.04;
-                }
+                
                 div{
                     // padding-top: 2.5rem;
                     // padding: 2.5rem 1rem 0 1rem;
